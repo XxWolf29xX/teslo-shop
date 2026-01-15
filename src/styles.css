@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/fonts/montserrat-alternates/MontserratAlternates-Medium.ttf") format("truetype");
+}
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --animate-fadeIn: fadeIn 0.3s ease-in-out; /* Animación (aplicada en las product-card) */
+
+  @keyframes fadeIn { /* volver a ejecutar ng serve -o para aplicar*/
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@plugin "daisyui" {
+  themes: night;
+}

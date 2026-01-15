@@ -3,6 +3,17 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./", // Base para la defininición de alias
+    "paths": { // Defininición de alias
+      "@/*": ["./src/app/*"], // Con esto (y el baseUrl), escribir en la url @/ seria lo mismo que esribir ./src/app
+      "@auth/*": ["./src/app/auth/*"],
+      "@products/*": ["./src/app/products/*"],
+      "@shared/*": ["./src/app/shared/*"],
+      "@store-front/*": ["./src/app/store-front/*"],
+      "@dashboard/*": ["./src/app/admin-dashboard/*"],
+      "@utils/*": ["./src/app/utils/*"],
+    },
+
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
