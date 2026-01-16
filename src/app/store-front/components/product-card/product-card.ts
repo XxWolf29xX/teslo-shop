@@ -3,6 +3,7 @@ import { ProductImagePipe } from '@/products/pipes/product-image.pipe';
 import { SlicePipe } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'product-card',
@@ -14,6 +15,6 @@ export class ProductCard {
   product = input.required<Product>();
 
   imageUrl = computed(() => { // retorno de imagenes
-    return `http://localhost:3000/api/files/product/${this.product().images[0]}`
+    return `${environment.baseUrl}/files/product/${this.product().images[0]}`
   })
 }
