@@ -1,4 +1,4 @@
 export const environment = {
-  production: false,
+  production: true,
   baseUrl: 'https://nest-teslo-shop-qs9c.onrender.com/api',
 };
