@@ -2,6 +2,7 @@
   "name": "teslo-shop",
   "version": "0.0.0",
   "scripts": {
+    "build:production": "ng build --configuration production",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
